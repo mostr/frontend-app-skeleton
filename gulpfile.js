@@ -9,15 +9,15 @@ var reload = browserSync.reload;
 var url = require('url');
 var proxy = require('proxy-middleware');
 
-var ENTRY_POINT = './src/index.js';
+var ENTRY_POINT = './app/js/index.js';
 
 var proxyOptions = url.parse('http://localhost:8888/api');
 proxyOptions.route = '/api';
 
 var bsDevOpts = {
-  files: ['index.html', 'dist/**/*.js', 'css/**/*.css'],
+  files: ['dist/**/*.js', 'app/**/*.html', 'app/css/**/*.css'],
   server: { 
-    baseDir: ['./', 'dist/'],
+    baseDir: ['./app', 'dist/'],
     middleware: [proxy(proxyOptions)]
   }
 };

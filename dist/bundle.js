@@ -5,7 +5,7 @@ function hello(name) {
   return helloProvider.say() + ' ' + name;
 }
 
-alert(hello('michal'));
+alert(hello('michal!'));
 },{"./provider":2}],2:[function(require,module,exports){
 module.exports.say = function () {
   return 'czesc,';

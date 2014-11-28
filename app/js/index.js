@@ -4,4 +4,4 @@ function hello(name) {
   return helloProvider.say() + ' ' + name;
 }
 
-alert(hello('michal'));
+alert(hello('michal!'));
