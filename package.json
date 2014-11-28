@@ -1,0 +1,16 @@
+{
+  "name": "gulp-browserify",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^1.7.1",
+    "browserify": "^6.3.3",
+    "gulp": "^3.8.10",
+    "gulp-util": "^3.0.1",
+    "proxy-middleware": "^0.7.0",
+    "url": "^0.10.1",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.1.1"
+  }
+}
